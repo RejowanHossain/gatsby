@@ -1,2 +1,120 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
 /* font-family: 'Poppins', sans-serif; */
+
+/* global css */
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* main css starts */
+
+/* navbar */
+.logo img {
+    width: 120px;
+}
+
+.hamburger {
+    height: 100px;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+}
+
+.hamburger .line-1 {
+    background-color: #663399;
+    height: 4px;
+    width: 35px;
+    display: block;
+}
+
+.hamburger .line-2 {
+    background-color: #663399;
+    height: 4px;
+    width: 35px;
+    display: block;
+    transform: translateY(6px);
+}
+
+.hamburger:hover {
+    cursor: pointer;
+}
+
+/* navbar ends */
+
+/* hero starts */
+#hero {
+    padding: 90px 0;
+}
+
+.hero-content span {
+    color: #663399;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+
+.hero-content h1 {
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 12px 0 20px 0;
+    width: 84%;
+}
+
+.hero-content .heading-span {
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.hero-content p {
+    font-weight: 400;
+
+}
+
+.hero-content a .theme-btn {
+    background: transparent;
+    background-color: transparent;
+    border: none;
+    background-color: #663399;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-weight: 500;
+    transition: .5s;
+}
+
+.hero-img {
+    animation: bounce 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes bounce {
+
+    0% {
+        transform: translateY(0px);
+    }
+
+
+
+    100% {
+        transform: translateY(10px);
+    }
+}
+
+/* hero ends */
