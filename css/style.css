@@ -23,6 +23,10 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+body .disable-scroll {
+    overflow: hidden;
+}
+
 /* main css starts */
 
 /* navbar */
@@ -36,28 +40,113 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center
+    align-items: center;
+    transition: .5s linear all;
+    z-index: 9999;
+
 }
 
 .hamburger .line-1 {
     background-color: #663399;
-    height: 4px;
-    width: 35px;
+    height: 3px;
+    width: 26px;
     display: block;
+    transition: .5s;
 }
 
 .hamburger .line-2 {
     background-color: #663399;
-    height: 4px;
-    width: 35px;
+    height: 3px;
+    width: 26px;
     display: block;
     transform: translateY(6px);
+    transition: .5s;
 }
 
 .hamburger:hover {
     cursor: pointer;
 }
 
+/* hamburger animation  */
+.click .line-1 {
+    transform: translate(-50%, 50%) rotate(45deg);
+}
+
+.click2 .line-2 {
+    /* transform: rotate(-30deg) translateY(-3px) translateX(1px); */
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+/* hamburger animation */
+
+/* Menu starts */
+
+#menu #list {
+    padding: 20% 0;
+}
+
+.menu-center {
+    text-align: center;
+}
+
+.menu-list {
+    height: 120vh;
+    background-color: #fff;
+    position: absolute;
+    top: -100px;
+    left: 0;
+    opacity: 0;
+    padding-top: 100px;
+    width: 100%;
+    z-index: 999;
+    transition: .6s ease-in-out;
+}
+
+.tog {
+    transition: .6s ease-in-out;
+    opacity: 1;
+}
+
+.main-menu ul li {
+    display: block;
+}
+
+.main-menu ul li a {
+    display: block;
+    text-transform: capitalize;
+    font-size: 37px;
+    text-decoration: none;
+    color: #18181a;
+    margin-bottom: 25px;
+    position: relative;
+    transition: .3s ease-in-out all;
+    font-weight: 500;
+}
+
+.main-menu ul li a::before {
+    position: absolute;
+    content: '';
+    left: 19%;
+    top: 14px;
+    background-color: #e5e5e5;
+    height: 28px;
+    width: 0;
+    transition: .3s ease-in-out all;
+}
+
+.main-menu ul li:hover a {
+    transform: translateX(40px);
+}
+
+.main-menu ul li a:hover::before {
+    width: 50px;
+}
+
+.address p {
+    margin-top: 40px;
+}
+
+/* menu ends */
 /* navbar ends */
 
 /* hero starts */
@@ -100,6 +189,7 @@ body {
     transition: .5s;
 }
 
+
 .hero-img {
     animation: bounce 1.5s ease-in-out infinite alternate;
 }
@@ -107,10 +197,8 @@ body {
 @keyframes bounce {
 
     0% {
-        transform: translateY(0px);
+        transform: translateY(-10px);
     }
-
-
 
     100% {
         transform: translateY(10px);
