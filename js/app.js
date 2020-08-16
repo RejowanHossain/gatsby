@@ -1,6 +1,7 @@
 const hamburger = document.querySelector('.hamburger');
 const overlay = document.querySelector('#list');
-const body = document.querySelector('body');
+// const mainMenu = document.getElementsById('menu');
+// const childMenu = document.getElementsById('list')
 
 hamburger.addEventListener('click', function () {
     if (overlay.classList == 'menu-list') {
@@ -11,7 +12,6 @@ hamburger.addEventListener('click', function () {
         hamburger.classList.add('click2');
     } else {
         overlay.classList.remove('tog');
-
         //hamburger animation remove
         hamburger.classList.remove('click');
         hamburger.classList.remove('click2');
