@@ -27,6 +27,27 @@ body .disable-scroll {
     overflow: hidden;
 }
 
+/* utility */
+.section-heading {
+    margin: 25px 0 50px 0;
+}
+
+.section-heading h2 {
+    font-size: 38px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    width: 44%;
+    margin-top: 20px;
+    color: #2b283d;
+    font-weight: 700;
+}
+
+.section-heading span {
+    color: #663399;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+
 /* main css starts */
 
 /* navbar */
@@ -206,3 +227,63 @@ body .disable-scroll {
 }
 
 /* hero ends */
+
+/* service starts */
+.service-wrapper {
+    padding: 60px 13px 10px;
+    background-color: #ece8f9;
+    border-top-left-radius: 28px;
+}
+
+.two {
+    background-color: #f4e7f1;
+}
+
+.three {
+    background-color: #ecfafa;
+}
+
+.service-wrapper .service-content {
+    margin-top: 28px;
+    padding: 4px;
+
+}
+
+.icon {
+    position: absolute;
+    top: 0;
+    left: 3%;
+    border: 7px solid #fff;
+    border-radius: 50%;
+    padding: 15px;
+}
+
+.service-content .svg-one {
+
+    font-size: 23px;
+    color: #639;
+}
+
+.service-content .svg-two {
+
+    font-size: 23px;
+    color: #990c68;
+}
+
+.service-wrapper .svg-three {
+
+    font-size: 23px;
+    color: #7acabf;
+}
+
+.service-wrapper h6 {
+    font-weight: 600;
+    margin-bottom: 18px;
+}
+
+.service-wrapper p {
+    font-size: 14px;
+    color: #666;
+}
+
+/* service ends */
