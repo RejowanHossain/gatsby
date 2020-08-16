@@ -67,9 +67,17 @@ body .disable-scroll {
   box-shadow: 0px 3px 4px -1px rgba(148, 61, 235, 0.44);
 }
 
+.theme-btn a {
+  color: #fff;
+  text-decoration: none;
+}
+
 .theme-btn:hover {
   background-color: #943deb;
+}
 
+.theme-btn:hover a {
+  text-decoration: none;
 }
 
 /* main css starts */
@@ -329,3 +337,83 @@ body .disable-scroll {
 }
 
 /* about ends */
+
+/* showcase starts */
+#showcase {
+  margin-bottom: 100px;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.showcase-content {
+  border: 3px solid #e6e6e6;
+  border-radius: 10px;
+  padding: 20px 16px;
+}
+
+.showcase-content svg {
+  color: #639;
+  font-size: 51px;
+  padding: 7px;
+  margin-bottom: 8px;
+}
+
+.showcase-content h6 {
+  font-weight: 700;
+}
+
+.margin-left {
+  margin-left: -17px;
+}
+
+/* showcase ends */
+
+/* blog starts */
+#blog {
+  margin-bottom: 100px;
+  background-color: #f9faff;
+  padding: 70px 0;
+}
+
+.blog-wrapper {
+  border: 3px solid #e6e6e6;
+  border-radius: 10px;
+  position: relative;
+}
+
+.blog-wrapper img {
+  height: 200px;
+  width: 300px;
+}
+
+.blog-content {
+  padding: 10px 7px;
+}
+
+.blog-content span {
+  font-size: 13px;
+  color: #bfbfc2;
+}
+
+.blog-content p {
+  font-size: 19px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.blog-btn {
+  position: absolute;
+  left: 10%;
+  bottom: -7%;
+  padding: 10px 24px;
+}
+
+.blog2 {
+  margin-top: 100px;
+}
+
+/* blog ends */
