@@ -162,6 +162,11 @@ body .disable-scroll {
 .tog {
   transition: 0.6s ease-in-out;
   opacity: 1;
+
+}
+
+.hiden {
+  overflow: hidden;
 }
 
 .main-menu ul li {
@@ -176,7 +181,7 @@ body .disable-scroll {
   color: #18181a;
   margin-bottom: 25px;
   position: relative;
-  transition: 0.3s ease-in-out all;
+  transition: 0.3s ease-in-out;
   font-weight: 500;
 }
 
@@ -480,7 +485,7 @@ body .disable-scroll {
 /* newsletter ends */
 
 /* footer starts */
-footer {}
+
 
 .footer-logo img {
   width: 120px;
