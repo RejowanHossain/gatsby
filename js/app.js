@@ -1,12 +1,10 @@
 const hamburger = document.querySelector('.hamburger');
 const overlay = document.querySelector('#list');
-// const mainMenu = document.getElementsById('menu');
-// const childMenu = document.getElementsById('list')
+
 
 hamburger.addEventListener('click', function () {
     if (overlay.classList == 'menu-list') {
         overlay.classList.add('tog');
-
         //adding class for animating the hamburger 
         hamburger.classList.add('click');
         hamburger.classList.add('click2');
