@@ -7,11 +7,10 @@ hamburger.addEventListener('click', function () {
         overlay.classList.add('tog');
         //adding class for animating the hamburger 
         hamburger.classList.add('click');
-        hamburger.classList.add('click2');
+
     } else {
         overlay.classList.remove('tog');
         //hamburger animation remove
         hamburger.classList.remove('click');
-        hamburger.classList.remove('click2');
     }
 })

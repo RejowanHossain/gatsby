@@ -63,7 +63,7 @@ body .disable-scroll {
   border-radius: 50px;
   font-weight: 500;
   transition: 0.5s;
-  transition: .5s linear all;
+  transition: 0.5s linear all;
   -moz-box-shadow: 0px 3px 4px -1px rgba(148, 61, 235, 0.44);
   box-shadow: 0px 3px 4px -1px rgba(148, 61, 235, 0.44);
 }
@@ -125,7 +125,7 @@ body .disable-scroll {
   transform: translate(-50%, 50%) rotate(45deg);
 }
 
-.click2 .line-2 {
+.click .line-2 {
   /* transform: rotate(-30deg) translateY(-3px) translateX(1px); */
   transform: translate(-50%, -50%) rotate(-45deg);
 }
@@ -165,7 +165,6 @@ body .disable-scroll {
   opacity: 1;
   transform: translateY(0px);
 }
-
 
 .main-menu ul li {
   display: block;
@@ -331,7 +330,6 @@ body .disable-scroll {
   margin-bottom: 100px;
 }
 
-
 .abt-content {
   transform: translateX(50px);
 }
@@ -483,7 +481,6 @@ body .disable-scroll {
 /* newsletter ends */
 
 /* footer starts */
-
 
 .footer-logo img {
   width: 120px;
