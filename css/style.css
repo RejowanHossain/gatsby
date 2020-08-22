@@ -153,7 +153,7 @@ body .disable-scroll {
   width: 100%;
   z-index: 999;
   transition: 0.9s ease-in-out;
-  transform: translateX(800px);
+  transform: translateY(-800px);
 }
 
 .pointer {
@@ -163,14 +163,9 @@ body .disable-scroll {
 .tog {
   transition: 0.9s ease-in-out;
   opacity: 1;
-  transform: translateX(0px);
-  overflow: hidden;
-
+  transform: translateY(0px);
 }
 
-.hiden {
-  overflow: hidden;
-}
 
 .main-menu ul li {
   display: block;
